@@ -1,0 +1,31 @@
+{
+  "name": "math-equation-parser",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4",
+    "nearley": "^2.20.1",
+    "moo": "^0.5.2"
+  },
+  "scripts": {
+    "start": "PORT=3007 react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "generate-grammar": "npx nearleyc src/grammar.ne -o src/grammar.js"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
